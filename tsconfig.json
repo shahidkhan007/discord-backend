@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "esnext",
+            "ES2015.Promise"
+        ],
+        "target": "es2017",
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "outDir": "./dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@models/*": ["./dist/models/*", "./models/*"],
+            "@classwork-models/*": [
+                "./dist/models/classwork/*",
+                "/models/classwork/*"
+            ],
+            "@controllers/*": ["./dist/controllers/*", "./controllers/*"],
+            "@classwork-controllers/*": [
+                "./dist/controllers/classwork/*",
+                "./controllers/classwork/*"
+            ],
+            "@classroom-models/*": [
+                "./dist/models/classroom/*",
+                "./models/classroom/*"
+            ],
+            "@classroom-controllers/*": [
+                "./dist/controllers/classroom/*",
+                "./controllers/classroom/*"
+            ]
+        }
+    }
+}
